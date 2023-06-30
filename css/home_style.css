@@ -13,7 +13,7 @@ body {
     background:  #081b29;
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -277,6 +277,7 @@ body {
     letter-spacing: 1px;
     color: #fff;
     margin: 0;
+    margin-top: 50px;
   }
   
   .container .card .contentBx .size, .container .card .contentBx .color {
@@ -300,6 +301,7 @@ body {
     opacity: 1;
     visibility: visible;
     transition-delay: 0.6s;
+    margin-bottom: 2px;
   }
   
   .container .card .contentBx .size h3, .container .card .contentBx .color h3{
@@ -307,8 +309,10 @@ body {
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     margin-right: 10px;
+    margin: 8px;
+  
   }
   
   .container .card .contentBx .size span{
@@ -320,7 +324,7 @@ body {
     display: inline-block;
     color: #111;
     background: #fff;
-    margin: 0 5px;
+    margin: 0px 5px;
     transition: 0.5s;
     color: #111;
     border-radius: 4px;
@@ -372,6 +376,63 @@ body {
     transform: translateY(0px);
     transition-delay: 0.75s;
 }  
+
+
+
+/* Media Query Responsive for Mobile Devices */
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .container .card {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 20px; /* Add some spacing between cards */
+  }
+
+  .container .card:before,
+  .container .card:hover:before {
+    clip-path: none; /* Remove the circular clip-path */
+  }
+
+  .container .card:after {
+    display: none; /* Hide the 'Nike' content */
+  }
+
+  .container .card .imgBx,
+  .container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+  }
+
+  .container .card .imgBx img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .container .card .contentBx {
+    position: relative;
+    height: auto;
+  }
+
+  .container .card:hover .contentBx {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
 
 
 /* FOOTTER */

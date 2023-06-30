@@ -146,9 +146,9 @@ body {
 }
 .home-img .rhombus {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 80%;
-    left: 40px;
+    left: 50px;
     
     background: #081b29;
     border: 25px solid #00bdfb;
@@ -177,9 +177,9 @@ body {
     top: -25%;
     right: -25%;
     width: 290px;
-    height: 350px;
+    height: 250px;
     background: #00bdfb;
-    transform: rotate(45deg);
+    transform: rotate(-60deg);
     z-index: -1;
     opacity: 0;
     animation: rhombus2 1s ease forwards;
